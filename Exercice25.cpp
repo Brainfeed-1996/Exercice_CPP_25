@@ -9,17 +9,17 @@
 #include <iostream>
 using namespace std ;
 void f1 (void)
-{   cout << "bonjour\n" ;
+{   cout << "bonjour1\n" ;
 }
 void f2 (int n)
 {   int i ;
     for (i=0 ; i<n ; i++)
-        cout << "bonjour\n" ;
+        cout << "bonjour2\n" ;
 }
 int f3 (int n)
 {   int i ;
     for (i=0 ; i<n ; i++)
-        cout << "bonjour\n" ;
+        cout << "bonjour3\n" ;
     return 0 ;
 }
 int main()
@@ -27,18 +27,19 @@ int main()
     void f2 (int) ;
     int f3 (int) ;
     f1 () ;
-    f2 (3) ;
-    f3 (3) ;
+    f2 (2) ;
+    f3 (5) ;
 }
 
 /*Résultat :
-bonjour
-bonjour
-bonjour
-bonjour
-bonjour
-bonjour
-bonjour
+bonjour1
+bonjour2
+bonjour2
+bonjour3
+bonjour3
+bonjour3
+bonjour3
+bonjour3
 
 
 === Code Execution Successful ===
